@@ -6,4 +6,4 @@ joblib
 flask
 xgboost
 scikit-learn
-guncorn
+gunicorn==23.0.0
