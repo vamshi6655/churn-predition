@@ -65,3 +65,4 @@ flowchart LR
     style D fill:#38A169,stroke:#2F855A,color:#fff
     style E fill:#4A5568,stroke:#2D3748,color:#fff
     style F fill:#E53E3E,stroke:#C53030,color:#fff
+📂 Project BlueprintComponentRole & DescriptionWA_Fn-UseC_-Telco-Customer-Churn.csvComprehensive Telco dataset covering demographics, subscribed services, and tenure.  train_model.pyTraining script handling data encoding, splitting, and estimator fit.  model.pklSerialized scikit-learn model ready for direct inference.  app.pyCore Flask web service routing endpoints and serving predictions[cite: 1].index.htmlFront-facing interactive customer parameter entry form[cite: 1].result.htmlClean prediction breakdown displaying churn probability and status[cite: 1].style.css & script.jsCustom layout aesthetics, animations, and input validation[cite: 1].
