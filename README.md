@@ -4,7 +4,6 @@
 
   <br/>
 
-  <!-- Badges with Glow & Flat Icons -->
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   </a>
@@ -33,7 +32,7 @@
     <a href="#-architecture--flow">Architecture</a> •
     <a href="#-project-blueprint">Blueprint</a> •
     <a href="#-getting-started">Getting Started</a> •
-    <a href="#-telecom-metrics--insights">Key Metrics</a>
+    <a href="#-telecom-metrics-evaluated">Key Metrics</a>
   </p>
 
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider" width="100%"/>
@@ -43,7 +42,7 @@
 ## 💡 Key Features
 
 * **⚡ Real-Time Inference:** Instantaneous risk classification via Flask microservices.
-* **🎯 High-Dimensional Analysis:** Ingests tenure, contract structures, payment habits, and service bundles to evaluate risk profile.
+* **🎯 High-Dimensional Analysis:** Ingests tenure, contract structures, payment habits, and service bundles to evaluate customer risk.
 * **💾 Zero-Friction Model Persistence:** Pre-trained binary classification model serialized via `pickle` for low-latency deployment.
 * **📱 Responsive Client UI:** Dynamic interface with form validation to explore customer parameters on the fly.
 
@@ -65,4 +64,3 @@ flowchart LR
     style D fill:#38A169,stroke:#2F855A,color:#fff
     style E fill:#4A5568,stroke:#2D3748,color:#fff
     style F fill:#E53E3E,stroke:#C53030,color:#fff
-📂 Project BlueprintComponentRole & DescriptionWA_Fn-UseC_-Telco-Customer-Churn.csvComprehensive Telco dataset covering demographics, subscribed services, and tenure.  train_model.pyTraining script handling data encoding, splitting, and estimator fit.  model.pklSerialized scikit-learn model ready for direct inference.  app.pyCore Flask web service routing endpoints and serving predictions[cite: 1].index.htmlFront-facing interactive customer parameter entry form[cite: 1].result.htmlClean prediction breakdown displaying churn probability and status[cite: 1].style.css & script.jsCustom layout aesthetics, animations, and input validation[cite: 1].
