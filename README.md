@@ -118,7 +118,7 @@ This prints accuracy/precision/recall/F1/ROC-AUC for each model and saves the be
 python app.py
 ```
 
-The app auto-opens your browser at **http://127.0.0.1:5000**.
+The app auto-opens your browser at **http://127.0.0.1:5000//**.
 
 ---
 
@@ -166,12 +166,6 @@ The app auto-opens your browser at **http://127.0.0.1:5000**.
 - Add batch prediction via CSV upload
 - Containerize with Docker for easier deployment
 - Add unit tests and CI
-
----
-
-## 📄 License
-
-No license file is currently included. Add a `LICENSE` file (e.g., MIT) if you plan to open-source this project.
 
 ---
 
