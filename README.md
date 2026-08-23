@@ -36,3 +36,17 @@ Churn-main/
 ├── result.html                           # Prediction output and probability display
 ├── script.js                             # Client-side validation and interactivity
 └── style.css                             # Custom layout styling and design
+⚙️ Tech Stack & ToolsMachine Learning & Data Processing: Python, Scikit-Learn, Pandas, NumPy, Pickle  Backend Application: Flask  Frontend Design: HTML5, CSS3, JavaScript  🚀 Quick Start Guide1. Clone the RepositoryBashgit clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git
+cd Churn-main
+2. Set Up a Virtual EnvironmentBash# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+3. Install DependenciesBashpip install flask scikit-learn pandas numpy
+4. Train the Model (Optional)If you want to retrain the classifier on the dataset:Bashpython train_model.py
+5. Launch the Web AppBashpython app.py
+Open your browser and navigate to:Plaintext[http://127.0.0.1:5000/](http://127.0.0.1:500
+
