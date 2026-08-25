@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Churn Analysis</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+<div class="result-card">
+
+    <h1>
+
+        <i class="fa-solid fa-chart-pie"></i>
+
+        Customer Churn Analysis
+
+    </h1>
+
+    <!-- ===================================== -->
+    <!-- STATUS CARD -->
+    <!-- ===================================== -->
+
+    {% if status_color == "success" %}
+
+    <div class="success-card">
+
+        <h2>
+
+            {{ risk_icon }}
+
+            {{ risk }}
+
+        </h2>
+
+        <p style="margin-top:10px;font-size:17px;">
+
+            {{ prediction }}
+
+        </p>
+
+    </div>
+
+    {% else %}
+
+    <div class="danger-card">
+
+        <h2>
+
+            {{ risk_icon }}
+
+            {{ risk }}
+
+        </h2>
+
+        <p style="margin-top:10px;font-size:17px;">
+
+            {{ prediction }}
+
+        </p>
+
+    </div>
+
+    {% endif %}
+
+    <!-- ===================================== -->
+    <!-- PROBABILITY -->
+    <!-- ===================================== -->
+
+    <h2 class="probability-title">
+
+        <i class="fa-solid fa-chart-column"></i>
+
+        Churn Probability
+
+    </h2>
+
+    <div class="progress">
+
+        <div class="progress-bar"
+
+             style="width:{{ probability }}%;">
+
+            {{ probability }}%
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- AI INSIGHTS -->
+    <!-- ===================================== -->
+
+    <div class="result-info">
+
+        <h3>
+
+            <i class="fa-solid fa-brain"></i>
+
+            AI Recommendation
+
+        </h3>
+
+        <ul>
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <strong>Risk Level :</strong>
+
+                &nbsp;{{ risk }}
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <strong>Prediction :</strong>
+
+                &nbsp;{{ prediction }}
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <strong>Model Confidence :</strong>
+
+                &nbsp;{{ confidence }}%
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                {{ recommendation }}
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- QUICK SUMMARY -->
+    <!-- ===================================== -->
+
+    <div class="result-info">
+
+        <h3>
+
+            <i class="fa-solid fa-clipboard-list"></i>
+
+            Prediction Summary
+
+        </h3>
+
+        <ul>
+
+            {% if status_color == "danger" %}
+
+            <li>
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                Customer has a high probability of leaving.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-gift"></i>
+
+                Consider offering loyalty discounts.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-headset"></i>
+
+                Contact customer support team proactively.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-file-signature"></i>
+
+                Recommend a longer contract plan.
+
+            </li>
+
+            {% else %}
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Customer appears loyal.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-heart"></i>
+
+                Continue maintaining service quality.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-star"></i>
+
+                Reward customer through loyalty programs.
+
+            </li>
+
+            <li>
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                Suggest premium plans for future growth.
+
+            </li>
+
+            {% endif %}
+
+        </ul>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- CONFIDENCE -->
+    <!-- ===================================== -->
+
+    <div class="result-info">
+
+        <h3>
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            Prediction Confidence
+
+        </h3>
+
+        <div class="progress">
+
+            <div class="progress-bar"
+
+                 style="width:{{ confidence }}%;">
+
+                {{ confidence }}%
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- BUTTON -->
+    <!-- ===================================== -->
+
+    <div style="text-align:center;">
+
+        <a href="/"
+
+           class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Predict Another Customer
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
