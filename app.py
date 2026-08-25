@@ -1,4 +1,4 @@
-u7 nk78 
+
 # ==========================================================
 # CUSTOMER CHURN PREDICTION
 # FLASK APPLICATION
@@ -7,8 +7,7 @@ u7 nk78
 from flask import Flask, render_template, request
 import pandas as pd
 import joblib
-import webbrowser
-from threading import Timer
+
 
 # ---------------------------------------------------------
 # Load Trained Model
@@ -24,10 +23,7 @@ app = Flask(__name__)
 
 # ---------------------------------------------------------
 # Auto Open Browser
-# ---------------------------------------------------------
-
-def open_browser():
-    webbrowser.open_new("http://127.0.0.1:5000")
+# -------------------------------------------------------
 
 # ---------------------------------------------------------
 # Home Page
@@ -140,10 +136,7 @@ def predict():
 
 if __name__ == "__main__":
 
-    Timer(1, open_browser).start()
-
     app.run(
-        host="127.0.0.1",
-        port=5000,
-        debug=True
-    )
+        host="0.0.0.0",
+        port=5000,)
+    
