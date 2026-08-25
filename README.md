@@ -1,4 +1,4 @@
-# 📊 Customer Churn Prediction
+# Customer Churn Prediction
 
 A machine learning web app that predicts whether a telecom customer is likely to churn, built with **scikit-learn** and served through a **Flask** dashboard. Enter a customer's profile (contract type, tenure, billing, services used, etc.) and get an instant churn risk score with a retention recommendation.
 
@@ -9,7 +9,7 @@ A machine learning web app that predicts whether a telecom customer is likely to
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Customer churn — when a subscriber cancels their service — is one of the costliest problems for telecom companies. This project trains and compares five classification models on the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn), picks the best performer by ROC-AUC, and exposes it through a simple web dashboard where you can plug in a customer's details and get:
 
@@ -19,7 +19,7 @@ Customer churn — when a subscriber cancels their service — is one of the cos
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ```
 CSV Dataset  →  Preprocessing (impute, scale, one-hot encode)
@@ -41,7 +41,7 @@ Each model is wrapped in a single `sklearn` `Pipeline` (preprocessing + classifi
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Churn-main/
@@ -122,7 +122,7 @@ The app auto-opens your browser at **http://127.0.0.1:5000//**.
 
 ---
 
-## 🌐 Usage
+##  Usage
 
 1. Fill in the customer form — demographics, account info (tenure, contract, billing), and subscribed services.
 2. Submit to get:
@@ -133,7 +133,7 @@ The app auto-opens your browser at **http://127.0.0.1:5000//**.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **Telco Customer Churn** — 7,043 customers, 21 features including:
 
@@ -147,7 +147,7 @@ The app auto-opens your browser at **http://127.0.0.1:5000//**.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python** — core language
 - **pandas** — data loading and cleaning
@@ -159,7 +159,7 @@ The app auto-opens your browser at **http://127.0.0.1:5000//**.
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Add model explainability (SHAP/LIME) to justify individual predictions
 - Persist prediction history to a database
