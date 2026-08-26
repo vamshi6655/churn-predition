@@ -2,6 +2,13 @@
 
 A machine learning web app that predicts whether a telecom customer is likely to churn, built with **scikit-learn** and served through a **Flask** dashboard. Enter a customer's profile (contract type, tenure, billing, services used, etc.) and get an instant churn risk score with a retention recommendation.
 
+AI-powered customer churn prediction application.
+
+## 🚀 Live Demo
+LINK:https://churn-predition-1.onrender.com
+
+...
+
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-black?style=flat-square&logo=flask)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
