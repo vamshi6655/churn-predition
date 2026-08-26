@@ -7,3 +7,4 @@ flask
 xgboost
 scikit-learn
 gunicorn==23.0.0
+streamlit
